@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/index.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Ficha de Cadastro</h1>
+        </header>
+
+        <form action="cadastro.php" method="get">
+
+            <div class="conteudo-form">
+                <label for="inome">Nome:</label>
+                <input type="text" name="inome" id="inome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="conteudo-form">
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="Sobrenome" id="isobrenome"  placeholder="Digite seu sobrenome" required>
+            </div>
+
+            <div class="conteudo-form">
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado" required>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espirito Santo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceara</option>
+                        <option value="PB">Paraiba</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RO">Rondonia</option>
+                        <option value="PI">Piaui</option>
+                    </optgroup>
+
+
+                    <optgroup label="Região Sul">
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Parana</option>
+                    </optgroup>
+
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="GO">Goias(Distrito Federal)</option>
+                        <option value="MT">Mato Grosso</option>
+                    </optgroup>
+
+                    <optgroup label="Região Norte">
+                        <option value="TO">Tocantins</option>
+                        <option value="AC">Acre</option>
+                        <option value="RR">Roraima</option>
+                        <option value="PA">Para</option>
+                        <option value="AP">Amapa</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="RO">Rondonia</option>
+                </select>
+                </optgroup>
+            </div>
+
+            <div class="conteudo-form">
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required >
+            </div>
+
+            <div class="conteudo-form">
+                <label for="icel">Tel:</label>
+                <input type="tel" name="Telefone" id="icel" required placeholder="(xx)xxxxx-xxxx">
+            </div>
+
+            <div class="conteudo-form">
+                <label for="ifoto">Foto:</label>
+                <input type="file" name="foto" id="ifoto">
+            </div>
+
+            <div class="conteudo-form">
+                <label for="ipais">Pais:</label>
+                <select name="Pais" id="ipais">
+                    <option value="BR">Brasil</option>
+                    <option value="AR">Argentina</option>
+                    <option value="UY">Uruguai</option>
+                    <option value="BR">Paraguai</option>
+                    <option value="CL">Chile</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="PE">Peru</option>
+                    <option value="CO">Colombia</option>
+                    <option value="EC">Equador</option>
+                    <option value="GU">Guiana</option>
+                    <option value="SU">Suriname</option>
+                    <option value="GF">Guiana Francesa</option>
+                </select>
+            </div>
+
+            <div id="conteudo-form">
+                <label for="IMSG"></label>
+                <textarea name="msg" id="IMSG" cols="30" rows="10" placeholder="Digite uma mensagem">
+                    </textarea>
+            </div>
+
+            <div class="btn">
+                <button id="enviar" type="submit" value="Enviar">Enviar
+                <button id="trocar" type="button"><a href="paginas/pagina-2.html">Trocar</a></button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+@charset "utf-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: rgba(255, 228, 196, 0.597);
+}
+
+header {
+    width: auto;
+    height: auto;
+    background-color: blanchedalmond;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    color: black;
+}
+
+main {
+    display: block;
+    width: 95vw;
+    height: auto;
+    background-color: bisque;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 5px auto;
+    height: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+
+div.conteudo-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    background-color: bisque;
+    padding: 5px;
+}
+
+label{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+input, select#iestado, select#ipais{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: 30px;
+}
+
+input#ifoto[type="file"] {
+   background-color: white;
+   color: white;
+   /*Reavaliar este input*/
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    width: 50%;
+    text-align: left;
+}
+
+div.btn {
+    display: flex;
+    margin: auto;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#trocar > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    form {
+        box-shadow: none;
+    }
+
+   div.conteudo-form{
+    width: 100vw;
+    margin: 10px;
+   }
+
+   input, select#iestado, select#ipais{
+    margin-right: 20%;
+   }
+
+   textarea{
+  width: auto;
+  margin: 10px auto;
+   }
+}
+
+@media screen and (orientation: landscape) {
+    form {
+        box-shadow: none;
+    }
+}
+

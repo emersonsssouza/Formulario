@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/pagina-2.css">
+    <title>Pagina 2</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de registro da clínica</h1>
+        <p>Por favor preencha o formulário abaixo</p>
+    </header>
+
+    <main>
+        <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="Name">Nome:</label>
+                <div class="campo-dados">
+                    <input type="text" name="First" id="Name" placeholder="First Name" required maxlength="20">
+                    <input type="text" name="Middle" id="Name" placeholder="Middle Name" required maxlength="25">
+                    <input type="text" name="Last" id="Name" placeholder="Last Name" required maxlength="20">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="E-mail" id="E-mail" placeholder="ex: myname@example.com" required maxlength="40">
+            </fieldset>
+            <fieldset>
+                <legend>Outros Dados</legend>
+                <label for="Gender">Genero</label>
+                <select name="Gender" id="igender" value="Escolha" required>
+                    <option value="Mas">Masculino</option>
+                    <option value="Fem">Feminino</option>
+                </select>
+                <label for="Contact">Número de contato:</label>
+                <input type="tel" name="Tel" id="Contact" placeholder="Area Code (xx) " required > -
+                <input type="tel" name="Tel" id="Contact" placeholder="Phone Number" required  >
+                <p>Em caso de emergencia</p>
+                <label for="Contactnumber">Número de contato:</label>
+
+                <input type="tel" name="Tel" id="Contactnumber" placeholder="Area Code (xx)"  > -
+
+                <input type="tel" name="Tel" id="Contactnumber" placeholder="Phone Number" >
+                <fieldset>
+                    <legend>
+                        Voce tem alguma alergia?"</legend>
+                    <p>
+                        <input type="radio" name="Radio" id="radio">Sim
+                        <input type="radio" name="Radio" id="radio">Não
+                    </p>
+                </fieldset>
+                <div class="btn">
+                    <input id="enviar" type="submit" value="Enviar">
+                    <a href="pagina-3.html">Trocar</a>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+
+</body>
+
+</html>

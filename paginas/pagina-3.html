@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/pagina-3.css">
+    <title>pagina 3</title>
+</head>
+
+<body>
+    <main>
+        <form action="PHP/cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div class="conteudo">
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required maxlength="20" placeholder="Digite seu nome">
+                </div>
+
+                <div class="conteudo">
+                    <label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome" required maxlength="30"
+                        placeholder="Digite seu sobrenome">
+                </div>
+
+                <div class="conteudo">
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="idade" id="idade" required placeholder="Informe a sua idade">
+                </div>
+
+                <div class="conteudo">
+                    <label for="iendereço">Endereço:</label>
+                    <input type="text" name="Endereço" id="iendereço" required maxlength="50"
+                        placeholder="Informe seu endereço">
+                </div>
+
+                <div class="conteudo">
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required maxlength="60"
+                        placeholder="email@example.com">
+                </div>
+
+
+                <div class="conteudo">
+                    <label for="itelefone">Telefone:</label>
+                    <input type="tel" name="Telefone" id="itelefone" placeholder="(xx) xxxx - xxxxx">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Dados do Animal</legend>
+
+                <div class="conteudo">
+                    <label for="iraça">Raça:</label>
+                    <input type="text" name="Raça" id="iraça" required maxlength="25" placeholder="Informe a raça">
+                </div>
+
+                <div class="conteudo">
+                    <label for="icor">Cor:</label>
+                    <input type="color" name="cor" id="icor">
+                </div>
+
+                <div class="conteudo">
+                    <label for="iiidade">Idade:</label>
+                    <input type="date" name="idade" id="iiidade">
+                </div>
+
+                <div class="conteudo">
+                    <label for="isexo">sexo:</label>
+                    <input type="text" name="sexo" id="isexo" required maxlength="10"
+                        placeholder="Digite o sexo do animal">
+                </div>
+
+            </fieldset>
+
+            <div class="btn">
+                <input class="enviar" type="submit" value="Enviar">
+                <a href="pagina-4.html">Formulario</a>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
