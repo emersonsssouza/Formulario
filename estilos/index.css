@@ -1,142 +1,139 @@
 @charset "utf-8";
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    width: 100vw;
-    height: auto;
-    background-color: rgba(255, 228, 196, 0.597);
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/imagens/bg-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-header {
-    width: auto;
-    height: auto;
-    background-color: blanchedalmond;
-    border-radius: 8px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    padding: 10px;
-}
-
-header > h1 {
-    text-align: center;
-    color: black;
-}
-
-main {
-    display: block;
-    width: 95vw;
-    height: auto;
-    background-color: bisque;
-    border-radius: 10px;
-    margin: 10px auto;
+div.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px 1px 8px black;
+  padding: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin: 5px auto;
-    height: auto;
-    padding: 10px;
-    box-shadow: 3px 3px 3px black;
+  background-color: white;
+  padding: 20px;
 }
 
-div.conteudo-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    margin: auto;
-    background-color: bisque;
-    padding: 5px;
+div.conteudo-campo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
-label{
-    display: flex;
-    margin: auto;
-    width: 50%;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
+div.conteudo-campo input[type="text"] {
+  padding: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
 }
 
-input, select#iestado, select#ipais{
-    display: flex;
-    margin: auto;
-    width: 50%;
-    height: 30px;
+div.conteudo-campo input[type="password"] {
+  padding: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
 }
 
-input#ifoto[type="file"] {
-   background-color: white;
-   color: white;
-   /*Reavaliar este input*/
+div.conteudo-senha {
+  display: flex;
+  justify-content: flex-end;
 }
 
-textarea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px auto;
-    width: 50%;
-    text-align: left;
+div.conteudo-senha p {
+  color: black;
+  font-size: 10px;
+  margin: 5px;
+  padding: 3px;
 }
 
-div.btn {
-    display: flex;
-    margin: auto;
+button#login{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: linear-gradient(to right,#0ECFE0,#7C71ED, #F00BFE );
 }
 
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto 5px;
-    width: 100px;
-    height: 40px;
-    border: 2px solid black;
-    color: black;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
+button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-button#trocar > a {
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
+div.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    form {
-        box-shadow: none;
-    }
+div.redes-sociais p {
+  font-size: 10px;
+}
 
-   div.conteudo-form{
-    width: 100vw;
-    margin: 10px;
-   }
+div.redes-sociais-img {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
 
-   input, select#iestado, select#ipais{
-    margin-right: 20%;
-   }
+div.redes-sociais-img img {
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 3px;
+}
 
-   textarea{
+div.final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.final p {
+  font-size: 12px;
+}
+
+button#link {
   width: auto;
-  margin: 10px auto;
-   }
+  background-color: rgba(6, 29, 6, 0.511);
+  padding: 10px 20px;
+  margin: 3px;
+  border: none;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-@media screen and (orientation: landscape) {
-    form {
-        box-shadow: none;
-    }
+button > a {
+  cursor: pointer;
 }
-

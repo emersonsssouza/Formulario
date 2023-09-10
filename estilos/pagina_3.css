@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(/imagens/img.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+div.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+div.formulario p#login {
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+div.campo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+div.campo input[type="text"] {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 20px;
+  width: 100%;
+  outline: none;
+}
+
+div.campo input[type="password"] {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+input:focus::-webkit-input-placeholder{
+  color: transparent;
+}
+
+div.usuario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  margin: -15px 0px 15px;
+}
+
+div.usuario label,
+a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+div.conteudo-final {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+div.conteudo-final p, a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+button#link-fixo {
+  width: auto;
+  padding: 0px;
+  background-color: rgb(3, 247, 3);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 4px;
+}
+
+button#link-fixo a {
+  font-size: 11px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
