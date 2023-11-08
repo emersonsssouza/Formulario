@@ -70,13 +70,13 @@ div.conteudo-senha p {
   padding: 3px;
 }
 
-button#login{
+button#login {
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  background-image: linear-gradient(to right,#0ECFE0,#7C71ED, #F00BFE );
+  background-image: linear-gradient(to right, #0ecfe0, #7c71ed, #f00bfe);
 }
 
 button a {

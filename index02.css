@@ -77,7 +77,8 @@ button {
   transition: 0.25s;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   outline: none;
   background-color: #8d3dc8;
   color: #fff;
@@ -91,7 +92,8 @@ a {
   transition: 0.3s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   outline: none;
   color: #000;
 }
@@ -117,7 +119,7 @@ button.btn {
   cursor: none;
 }
 
-button.btn  a {
+button.btn a {
   color: white;
   font-weight: 100;
   cursor: pointer;
