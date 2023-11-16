@@ -124,19 +124,22 @@ a {
   color: white;
 }
 
-button#link-fixo {
+button#link {
   width: auto;
-  padding: 0px;
-  background-color: rgb(3, 247, 3);
+  background-color: rgba(0, 128, 0, 0.658);
+  border: none;
+  border-radius: 50%;
+  padding: 1px;
+  margin: 3px;
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 4px;
 }
 
-button#link-fixo a {
-  font-size: 11px;
-  color: black;
-  font-weight: bold;
+#link > img {
+  width: auto;
+}
+
+button > a {
   cursor: pointer;
 }

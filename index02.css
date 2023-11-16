@@ -106,21 +106,26 @@ a + a {
   margin-top: 1.125rem;
 }
 
-button.btn {
+button#link {
   width: auto;
-  background-color: rgba(6, 29, 6, 0.511);
-  padding: 0px 20px;
-  margin: 3px;
+  background-color: transparent;
   border: none;
-  border-radius: 20px;
+  border-radius: 50%;
+  padding: 1px;
+  margin: -10px 5px;
   position: fixed;
   bottom: 0;
   right: 0;
-  cursor: none;
 }
 
-button.btn a {
-  color: white;
-  font-weight: 100;
+#link > img {
+  width: auto;
+}
+
+button > a {
   cursor: pointer;
+}
+
+@media screen and (orientation: portrait) {
+ 
 }
