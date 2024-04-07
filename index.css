@@ -114,14 +114,10 @@ button.login a {
   body {
     background-image: url(imagens/BG.jpg);
   }
-
-  .form {
-    width: 250px;
-  }
 }
 
-@media only screen and (min-width: 700px) {
+@media screen and (max-width: 420px) {
   .form {
-    width: 500px;
+    width: 250px;
   }
 }
