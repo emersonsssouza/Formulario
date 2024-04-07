@@ -118,6 +118,12 @@ button.login a {
 
 @media screen and (max-width: 420px) {
   .form {
-    width: 250px;
+    width: 90vw;
+    height: 70vh;
+  }
+
+  .form>p.cad {
+    font-size: 2rem;
+    letter-spacing: 2px;
   }
 }
