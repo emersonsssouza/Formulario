@@ -10,13 +10,15 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(imagens/BG.jpg);
+  background-image: url(imagens/img.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-div.formulario {
+.form {
+  background-color: #7e22a2a4;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,67 +27,54 @@ div.formulario {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
   border: 1px solid black;
   box-shadow: 1px 1px 8px black;
   padding: 20px;
 }
 
-form {
-  background-color: white;
-  padding: 20px;
-}
-
-div.conteudo-campo {
+.conteudo-campo {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 1rem;
 }
 
-div.conteudo-campo input[type="text"] {
+.conteudo-campo input[type="text"],
+input[type="password"] {
   padding: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: none;
+  border-radius: 0.5rem;
   outline: none;
 }
 
-div.conteudo-campo input[type="password"] {
-  padding: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-}
-
-div.conteudo-senha {
-  display: flex;
-  justify-content: flex-end;
-}
-
-div.conteudo-senha p {
+.conteudo-senha {
+  text-align: center;
+  text-decoration: none;
   color: black;
-  font-size: 10px;
-  margin: 5px;
-  padding: 3px;
+  margin: 1rem auto;
 }
 
-button#login {
+a.conteudo-senha:hover {
+  text-decoration: underline;
+}
+
+button.login {
   width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 20px;
+  border-radius: 2rem;
   cursor: pointer;
   background-image: linear-gradient(to right, #0ecfe0, #7c71ed, #f00bfe);
 }
 
-button a {
+button.login a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 
-div.redes-sociais {
+.redes {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,51 +83,45 @@ div.redes-sociais {
   margin: 5px;
 }
 
-div.redes-sociais p {
-  font-size: 10px;
+.redes p {
+  font-size: 1rem;
+  text-align: center;
 }
 
-div.redes-sociais-img {
+.redes-icons {
   display: flex;
   flex-direction: row;
   padding: 10px;
 }
 
-div.redes-sociais-img img {
-  width: 40px;
-  background-color: white;
-  border-radius: 50%;
-  margin: 3px;
+.redes-icons a i {
+  margin: auto 0.5rem;
+  color: black;
 }
 
-div.final {
+.footer-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-div.final p {
-  font-size: 12px;
+.footer-form p {
+  font-size: 1rem;
 }
 
-button#link {
-  width: auto;
-  background-color: rgba(74, 60, 224, 0.329);
-  padding: 5px ;
-  margin: 10px;
-  border: none;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
+@media screen and (orientation: portrait) {
+  body {
+    background-image: url(imagens/BG.jpg);
+  }
+
+  .form {
+    width: 250px;
+  }
 }
 
-#link > img {
-  width: 20px;
-
-}
-
-button > a {
-  cursor: pointer;
+@media only screen and (min-width: 700px) {
+  .form {
+    width: 500px;
+  }
 }
